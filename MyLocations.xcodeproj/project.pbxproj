@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		48D9F53C1A03FF1E0040D0D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D9F53B1A03FF1E0040D0D6 /* AppDelegate.swift */; };
-		48D9F53E1A03FF1E0040D0D6 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D9F53D1A03FF1E0040D0D6 /* FirstViewController.swift */; };
+		48D9F53E1A03FF1E0040D0D6 /* CurrentLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D9F53D1A03FF1E0040D0D6 /* CurrentLocationViewController.swift */; };
 		48D9F5401A03FF1E0040D0D6 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D9F53F1A03FF1E0040D0D6 /* SecondViewController.swift */; };
 		48D9F5431A03FF1E0040D0D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48D9F5411A03FF1E0040D0D6 /* Main.storyboard */; };
 		48D9F5451A03FF1E0040D0D6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48D9F5441A03FF1E0040D0D6 /* Images.xcassets */; };
@@ -30,7 +30,7 @@
 		48D9F5361A03FF1E0040D0D6 /* MyLocations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyLocations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48D9F53A1A03FF1E0040D0D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48D9F53B1A03FF1E0040D0D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		48D9F53D1A03FF1E0040D0D6 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		48D9F53D1A03FF1E0040D0D6 /* CurrentLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLocationViewController.swift; sourceTree = "<group>"; };
 		48D9F53F1A03FF1E0040D0D6 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		48D9F5421A03FF1E0040D0D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		48D9F5441A03FF1E0040D0D6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -80,7 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				48D9F53B1A03FF1E0040D0D6 /* AppDelegate.swift */,
-				48D9F53D1A03FF1E0040D0D6 /* FirstViewController.swift */,
+				48D9F53D1A03FF1E0040D0D6 /* CurrentLocationViewController.swift */,
 				48D9F53F1A03FF1E0040D0D6 /* SecondViewController.swift */,
 				48D9F5411A03FF1E0040D0D6 /* Main.storyboard */,
 				48D9F5441A03FF1E0040D0D6 /* Images.xcassets */,
@@ -217,7 +217,7 @@
 			files = (
 				48D9F5401A03FF1E0040D0D6 /* SecondViewController.swift in Sources */,
 				48D9F53C1A03FF1E0040D0D6 /* AppDelegate.swift in Sources */,
-				48D9F53E1A03FF1E0040D0D6 /* FirstViewController.swift in Sources */,
+				48D9F53E1A03FF1E0040D0D6 /* CurrentLocationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +343,7 @@
 				INFOPLIST_FILE = MyLocations/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -353,6 +354,7 @@
 				INFOPLIST_FILE = MyLocations/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -409,6 +411,7 @@
 				48D9F5591A03FF1E0040D0D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		48D9F55A1A03FF1E0040D0D6 /* Build configuration list for PBXNativeTarget "MyLocationsTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +420,7 @@
 				48D9F55C1A03FF1E0040D0D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
