@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		48D0ABAD1A1244C80038CEC6 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48D0ABAA1A1244C80038CEC6 /* TwitterKit.framework */; };
+		48D0ABAE1A1244C80038CEC6 /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 48D0ABAB1A1244C80038CEC6 /* TwitterKitResources.bundle */; };
+		48D0ABAF1A1244C80038CEC6 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48D0ABAC1A1244C80038CEC6 /* Fabric.framework */; };
 		48D9F53C1A03FF1E0040D0D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D9F53B1A03FF1E0040D0D6 /* AppDelegate.swift */; };
 		48D9F53E1A03FF1E0040D0D6 /* CurrentLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D9F53D1A03FF1E0040D0D6 /* CurrentLocationViewController.swift */; };
 		48D9F5401A03FF1E0040D0D6 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D9F53F1A03FF1E0040D0D6 /* SecondViewController.swift */; };
@@ -27,6 +30,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		48D0ABAA1A1244C80038CEC6 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
+		48D0ABAB1A1244C80038CEC6 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
+		48D0ABAC1A1244C80038CEC6 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		48D9F5361A03FF1E0040D0D6 /* MyLocations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyLocations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48D9F53A1A03FF1E0040D0D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48D9F53B1A03FF1E0040D0D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +51,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48D0ABAD1A1244C80038CEC6 /* TwitterKit.framework in Frameworks */,
+				48D0ABAF1A1244C80038CEC6 /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +72,9 @@
 				48D9F5381A03FF1E0040D0D6 /* MyLocations */,
 				48D9F5501A03FF1E0040D0D6 /* MyLocationsTests */,
 				48D9F5371A03FF1E0040D0D6 /* Products */,
+				48D0ABAA1A1244C80038CEC6 /* TwitterKit.framework */,
+				48D0ABAB1A1244C80038CEC6 /* TwitterKitResources.bundle */,
+				48D0ABAC1A1244C80038CEC6 /* Fabric.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +136,7 @@
 				48D9F5321A03FF1E0040D0D6 /* Sources */,
 				48D9F5331A03FF1E0040D0D6 /* Frameworks */,
 				48D9F5341A03FF1E0040D0D6 /* Resources */,
+				48D0ABA91A1244660038CEC6 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -164,6 +176,7 @@
 				TargetAttributes = {
 					48D9F5351A03FF1E0040D0D6 = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = 2WTX3SZ87D;
 					};
 					48D9F54C1A03FF1E0040D0D6 = {
 						CreatedOnToolsVersion = 6.1;
@@ -195,6 +208,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48D0ABAE1A1244C80038CEC6 /* TwitterKitResources.bundle in Resources */,
 				48D9F5431A03FF1E0040D0D6 /* Main.storyboard in Resources */,
 				48D9F5481A03FF1E0040D0D6 /* LaunchScreen.xib in Resources */,
 				48D9F5451A03FF1E0040D0D6 /* Images.xcassets in Resources */,
@@ -209,6 +223,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		48D0ABA91A1244660038CEC6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 2cc7c06240acac2171be227fd1c2fc620a197400 d4014b7785e59267fc73caaa8bdf36bdd4a43ff4fbe5cf9ccff44c036dee3bb4";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		48D9F5321A03FF1E0040D0D6 /* Sources */ = {
@@ -340,9 +370,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = MyLocations/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -351,9 +388,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = MyLocations/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
