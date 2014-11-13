@@ -68,7 +68,7 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
     // MARK: - CLLocationManagerDelegate
     
     func locationManager(manager: CLLocationManager!, didFailWithError error: NSError!) {
-        println("didFailWithError \(error)")
+        //println("didFailWithError \(error)")
         
         if (error.code == CLError.LocationUnknown.rawValue) {
             return
@@ -108,7 +108,7 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
     
     func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
         let newLocation = locations.last as CLLocation
-        println("didUpdateLocations \(newLocation)")
+        //println("didUpdateLocations \(newLocation)")
 
         if newLocation.timestamp.timeIntervalSinceNow < -5 {
             return
@@ -129,7 +129,7 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
             updateLabels()
 
             if newLocation.horizontalAccuracy <= locationManager.desiredAccuracy {
-                println("We're done!")
+                //println("We're done!")
                 stopLocationManager()
                 configureGetButton()
                 
@@ -139,12 +139,12 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
             }
             
             if !performingReverseGeocoding {
-                println("Geocoding")
+                //println("Geocoding")
                 performingReverseGeocoding = true
                 
                 geocoder.reverseGeocodeLocation(location, completionHandler: {
                     placemarks, error in
-                    println("Found placemarks: \(placemarks), error: \(error)")
+                    //println("Found placemarks: \(placemarks), error: \(error)")
                     self.lastGeocodingError = error
                     if error == nil && !placemarks.isEmpty {
                         self.placemark = placemarks.last as? CLPlacemark
@@ -160,7 +160,7 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
             let timeInterval = newLocation.timestamp.timeIntervalSinceDate(location!.timestamp)
             
             if timeInterval > 10 {
-                println("Force done!")
+                //println("Force done!")
                 stopLocationManager()
                 updateLabels()
                 configureGetButton()
